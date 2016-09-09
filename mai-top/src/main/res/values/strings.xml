@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">值得买</string>
+    <string name="wait_dialog_hint">加载中,请稍后...</string>
+    <string name="network_is_futility">请检查网络</string>
+    <string name="the_network_is_dead">网络不给力，请检查您的网络状态后重试。</string>
+    <string name="leave">离开</string>
+    <string name="no_leave">再等下</string>
+    <string name="buy">maishenme</string>
+    <string name="menu_settings">menu</string>
+</resources>
