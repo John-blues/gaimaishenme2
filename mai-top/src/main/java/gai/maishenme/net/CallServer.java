@@ -1,10 +1,4 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015年5月11日 
- * 
- *******************************************************************************/ 
 package gai.maishenme.net;
-
 import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -34,8 +28,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
-
-
 /**
  * <pre>
  * 业务名:

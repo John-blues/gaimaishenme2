@@ -1,19 +1,11 @@
-/**
- * 
- */
+
 package gai.maishenme.common;
 
 import android.content.Context;
 import android.view.WindowManager;
 
 public class AppUtil {
-
-	/**
-	 *
-	 * 
-	 * @param context
-	 * @return
-	 */
+/*获取屏幕分辨率,此项目中无用*/
 	public static int[] getScreenDispaly(Context context) {
 		WindowManager windowManager = (WindowManager) context
 				.getSystemService(Context.WINDOW_SERVICE);

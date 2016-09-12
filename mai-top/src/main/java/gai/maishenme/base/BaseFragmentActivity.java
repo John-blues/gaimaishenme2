@@ -21,10 +21,6 @@ import gai.maishenme.util.CustomTitleBar;
 import gai.maishenme.util.SerialUtils;
 import gai.maishenme.util.ShowErrorDialogUtil;
 
-/**
- *
- */
-
 public class BaseFragmentActivity extends FragmentActivity implements
 		OnClickListener {
 
@@ -50,49 +46,26 @@ public class BaseFragmentActivity extends FragmentActivity implements
 		serialutols = new SerialUtils();
 		if (null != savedInstanceState) {
 			mApplication = (ValueShopApplication) getApplication();
-			/*if (savedInstanceState.containsKey("UserLoginInfo")) {
-				UserLoginVo loginInfo = (UserLoginVo) savedInstanceState
-						.getSerializable("UserLoginInfo");
-				mApplication.setUserLoginInfo(loginInfo);
-			}
-			if (savedInstanceState.containsKey("timeOutOrLoginCrowdOut")) {
-				DeKuShuApplication.timeOutOrLoginCrowdOut = savedInstanceState
-						.getBoolean("timeOutOrLoginCrowdOut");
-			}
-			if (savedInstanceState.containsKey("sessionId")) {
-				mApplication.setSessionId(savedInstanceState
-						.getString("sessionId"));
-			}
-			if (savedInstanceState.containsKey("myAccountBodyVO")) {
-				mApplication.myAccountBodyVO = (MyAccountBodyVO) savedInstanceState
-						.getSerializable("myAccountBodyVO");
-			}*/
+
 		}
 		ActivityTaskManager.getInstance().putActivity(
 				getClass().getSimpleName(), this);
 
 	}
 
-	/**
-	 * ���title�ķ���
-	 * 
-	 * @param layoutId
-	 * @param str
-	 */
+
 	public void setContentViewWithActionBar(int layoutId, String str) {
-		// ��ȡһ��LayoutInflaterʵ��
+
 		LayoutInflater inflater = getLayoutInflater();
-		// ����һ��viewGroup
+		// viewGroup
 		ViewGroup contentV = (ViewGroup) inflater.inflate(
 				R.layout.activity_base, null);
 		inflater.inflate(layoutId, contentV);
 		setContentView(contentV);
-		// ��ʼ��customTitleBar
+		// customTitleBar
 		customTitleBar = (CustomTitleBar) findViewById(R.id.title_bar);
-		// ��ʼ��initViewBar��������������id
 		customTitleBar.initViewBar(contentV);
 		customTitleBar.setMiddleBar(str);
-		// ΪleftBar��ӵ���¼�
 		customTitleBar.getLeftBar().setOnClickListener(this);
 	}
 
@@ -133,15 +106,6 @@ public class BaseFragmentActivity extends FragmentActivity implements
 		}
 	}
 
-	
-
-	// @Override
-	// protected void onDestroy() {
-	// // TODO Auto-generated method stub
-	// super.onDestroy();
-	// SPUtils.put(this, "isbackground", true);
-	// ActivityCollector.removeActivity(this);
-	// }
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
@@ -151,15 +115,9 @@ public class BaseFragmentActivity extends FragmentActivity implements
 
 	}
 
-
-
 	public void startActivity(Class<? extends Activity> cls) {
 		Intent intent = new Intent(this, cls);
 		startActivity(intent);
-		// @SuppressWarnings("deprecation")
-		// int version = Integer.valueOf(android.os.Build.VERSION.SDK);
-		// if (version >= 5) {
-		// this.overridePendingTransition(0, 0);
-		// }
+
 	}
 }

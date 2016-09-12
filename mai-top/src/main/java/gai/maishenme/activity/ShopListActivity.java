@@ -52,7 +52,7 @@ public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 
 		HashMap<String, String> hashmap = new HashMap<String, String>();
 		hashmap.put("v","1.3.1");
-		hashmap.put("mallname","�����̳�");
+		hashmap.put("mallname","京东商城");
 		hashmap.put("cate","");
 		hashmap.put("page", String.valueOf(page));
 		new RequestCommant().requestQueryShopList(new requetHandle(this), this,
@@ -73,9 +73,9 @@ public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 			if (msg.what == Constants.SHOPLISTTEST) {
 				shopListView.onRefreshComplete();
 				if (command.isSuccess) {
-					if (null != command.resData) {	
-						Log.e("ShopListActivity===============", "ShopListActivity:����ɹ�");
-						Log.e("ShopListActivity===============", command.resData+"");
+					if (null != command.resData) {
+						Log.e("ShopListActivity=", "ShopListActivity:");
+						Log.e("ShopListActivity=", command.resData+"");
 						ShopBriefDataVo body = (ShopBriefDataVo) command.resData;
 						List<Data> record = body.getData();
 						records.addAll(record);
@@ -103,15 +103,15 @@ public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 		shopListView.setAdapter(shopListAdapter);					
 		ILoadingLayout startLabels = shopListView.getLoadingLayoutProxy(true,
 				false);
-		startLabels.setPullLabel("����ˢ��...");
-		startLabels.setRefreshingLabel("����ˢ��...");
-		startLabels.setReleaseLabel("�ſ�ˢ��...");
+		startLabels.setPullLabel("load...");
+		startLabels.setRefreshingLabel("加载中...");
+		startLabels.setReleaseLabel("释放更新...");
 
 		ILoadingLayout endLabels = shopListView.getLoadingLayoutProxy(false,
 				true);
-		endLabels.setPullLabel("��������...");
-		endLabels.setRefreshingLabel("��������...");
-		endLabels.setReleaseLabel("��Ļ����,��ʾ����");
+		endLabels.setPullLabel("正在加载...");
+		endLabels.setRefreshingLabel("加载中...");
+		endLabels.setReleaseLabel("loading...");
 
 		shopListView.setOnRefreshListener(
 				new com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2<ListView>() {
@@ -129,9 +129,7 @@ public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 						shopListView.setMode(Mode.BOTH);
 						requestLfData();
 					}
-
 				});
-
 	}
 	private void initView() {
 		// TODO Auto-generated method stub

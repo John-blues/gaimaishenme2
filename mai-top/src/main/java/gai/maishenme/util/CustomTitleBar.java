@@ -11,15 +11,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/** *****************************
- * @date ����ʱ�䣺2015��10��16�� ����3:41:59 
- * @author  ���ã��Զ���title������
- * @version 1.0 
- * @parameter  
- * @since 
- * @return  
- *********************************
- */
 public class CustomTitleBar extends RelativeLayout{
 	private ImageView leftBar;
 	private TextView middleBar,rightBar;
@@ -40,21 +31,21 @@ public class CustomTitleBar extends RelativeLayout{
 		rightBar = (TextView) viewGroup.findViewById(R.id.right_bar);
 	}
 
-	//��ȡleftbar
+	//获取leftbar
 	public ImageView getLeftBar(){
 		return leftBar;
 
 	}
-	//Ϊmiddlebar��������
+	//为middlebar设置内容
 	public void setMiddleBar(String str){
 		middleBar.setText(str);
 	}
-	//Ϊrightbar��������
+	//为rightbar设置内容
 	public void setRightBar(String str){
 		rightBar.setVisibility(View.VISIBLE);
 		rightBar.setText(str);
 	}
-	//��ȡrightbar
+	//获取rightbar
 	public TextView getRightBar(){
 		return rightBar;
 

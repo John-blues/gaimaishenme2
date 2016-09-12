@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.stateunion.p2p.edingtou.util.CustomTitleBar
+<com.maishenme
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/title_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/title_blue" >
-    
-    
+
+
     <ImageView
-        android:id="@+id/left_bar" 
+        android:id="@+id/left_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:padding="15dp"
         android:src="@drawable/back_title"/>
-    
-    <TextView 
+
+    <TextView
         android:id="@+id/middle_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_20"
         android:layout_centerInParent="true"/>
-    
+
     <TextView
         android:id="@+id/right_bar"
         android:layout_width="wrap_content"
@@ -36,4 +36,4 @@
         android:textSize="16sp"
         android:visibility="gone"
         />
-</com.stateunion.p2p.edingtou.util.CustomTitleBar>
+</com.maishenme>

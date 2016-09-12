@@ -1,13 +1,4 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015��5��13�� 
- * 
- *******************************************************************************/ 
 package gai.maishenme.util;
-
-
-
-
 import gai.maishenme.R;
 import gai.maishenme.application.ValueShopApplication;
 import gai.maishenme.dialog.ValueShopDialog;
@@ -16,19 +7,6 @@ import gai.maishenme.dialog.ValueShopDialog.ShopDialogListener;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
-/**
- * <pre>
- * ҵ����:
- * ����˵��: ��ʾdialog
- * ��д����:	2015��5��13��
- * ����:	zgz
- * 
- * ��ʷ��¼
- * 1���޸����ڣ�
- *    �޸��ˣ�
- *    �޸����ݣ�
- * </pre>
- */
 @SuppressLint("ResourceAsColor")
 public class ShowErrorDialogUtil {
 

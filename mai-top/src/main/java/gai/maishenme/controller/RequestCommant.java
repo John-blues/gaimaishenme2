@@ -16,7 +16,7 @@ import java.util.HashMap;
  * <pre>
  * 业务名:
  * 功能说明: 
- * 
+ * 需求命令：网络
  */
 public class RequestCommant {
 

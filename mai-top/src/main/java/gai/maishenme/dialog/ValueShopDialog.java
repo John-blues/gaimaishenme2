@@ -1,13 +1,4 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015年5月13日 
- * 
- *******************************************************************************/ 
 package gai.maishenme.dialog;
-
-
-
-
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;

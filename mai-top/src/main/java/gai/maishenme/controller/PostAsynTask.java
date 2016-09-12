@@ -38,12 +38,6 @@ public class PostAsynTask extends AsyncTask<Command, Integer, Message> {
 
 	@SuppressWarnings("unchecked")
 	public PostAsynTask(Context context, Command command) {
-		// YiTongDaiApplication application = (YiTongDaiApplication) ((Activity)
-		// context)
-		// .getApplication();
-		// if (null != application.getSessionId())
-		// paramHashMap.put("sessionId", application.getSessionId());
-
 		HashMap<String, String> paramHashMap = (HashMap<String, String>) command.param;
 	/*	if(ValueShopApplication.isdekushuapplication.getUserloginbodyvo() != null){
 
@@ -152,12 +146,9 @@ public class PostAsynTask extends AsyncTask<Command, Integer, Message> {
 				LinearLayout.LayoutParams.WRAP_CONTENT));
 		return dialog;
 	}
-
 	private Message execute(Command command) {
 		Operation operation = new Operation();
 		// ------------------------------------------------
-		
-		//lf闹着玩儿
 		if(Constants.SHOPLISTTEST==command.commandID){
 			return operation.executeLfTest(command);
 			

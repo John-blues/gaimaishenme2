@@ -1,7 +1,4 @@
-/*******************************************************************************
- *
- * 
- *******************************************************************************/ 
+
 package gai.maishenme.application;
 
 
@@ -40,19 +37,12 @@ public class ValueShopApplication extends Application{
 	private static final String PREF_PWD = "pwd";
 
 	public static boolean isShowingDialog = false;
-	private boolean sdCardExist;//sd���Ƿ����
+	private boolean sdCardExist;
 	private String sessionId;
 
 	private String uuid;
 
 	public static boolean timeOutOrLoginCrowdOut = false;
-	/**
-	 * ��������˻���Ϣ
-	 */
-
-	//	public static String timeOutTips = "";
-	/** ����·�� */
-
 
 	@Override
 	public void onCreate() {
@@ -67,7 +57,6 @@ public class ValueShopApplication extends Application{
 		Constants.SCREEN_HEIGHT = metric.heightPixels;
 		 startService(new Intent(this, MyService.class));
 
-		// ��ȡ�汾��
 		PackageManager mPckManager = this.getPackageManager();
 
 		try {
@@ -80,7 +69,6 @@ public class ValueShopApplication extends Application{
 			e.printStackTrace();
 		}
 
-		// ��ȡϵͳ�汾
 		Constants.SYSTEM_VERSION = android.os.Build.VERSION.SDK_INT;
 		getSIMInfo();
 		
@@ -88,23 +76,12 @@ public class ValueShopApplication extends Application{
 	public static ValueShopApplication getInstance() {
 		return instance;
 	}
-	/**
-	 * ��ʼ��imageLoader
-	 */
+
 	public File getImgDir() {
-		/* �����жϵĻ�������ֻ�֧����չ�ڴ棬����û��װsd���ᱨ�� */
-		/*if (sdCardExist) {
-			return getExternalCacheDir();
-		} else {
-			return Environment.getDataDirectory();
-		}*/
+
 		return Environment.getDataDirectory();
 	}
-	/**
-	 * ��ȡ��Ӫ��
-	 * 
-	 * void
-	 */
+
 	private void getSIMInfo() {
 		TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 		String operator = tm.getSimOperator();
@@ -112,12 +89,10 @@ public class ValueShopApplication extends Application{
 		if (null != operator) {
 			if (operator.equals("46000") || operator.equals("46002")) {
 				Constants.OPERATOR = 0;
-				// �й��ƶ�
+
 			} else if (operator.equals("46001")) {
-				// �й���ͨ
 				Constants.OPERATOR = 1;
 			} else if (operator.equals("46003")) {
-				// �й�����
 				Constants.OPERATOR = 2;
 			}
 		}
@@ -147,9 +122,7 @@ public class ValueShopApplication extends Application{
 
 
 	public boolean modifyPassWSuccess = false;
-	/*
-	 * �û���Ϣ������ 
-	 */
+
 	public String getUserName() {
 		if (userName == null) {
 			SharedPreferences preferences = PreferenceManager
@@ -167,11 +140,10 @@ public class ValueShopApplication extends Application{
 		return password;
 	}
 
-	/**
-	 * �����û���
-	 * 
-	 * @param user
-	 */
+	public static void setTimeOutOrLoginCrowdOut(boolean timeOutOrLoginCrowdOut) {
+		ValueShopApplication.timeOutOrLoginCrowdOut = timeOutOrLoginCrowdOut;
+	}
+
 	public void setUserName(String username) {
 		if (username != null) {
 			SharedPreferences preferences = PreferenceManager
@@ -183,12 +155,7 @@ public class ValueShopApplication extends Application{
 		}
 	}
 
-	/**
-	 * �������� �����ʵ������ ֻ��demo��ʵ�ʵ�Ӧ������Ҫ��password ���ܺ���� preference ����sdk
-	 * �ڲ����Զ���¼��Ҫ�����룬�Ѿ����ܴ洢��
-	 * 
-	 * @param pwd
-	 */
+
 	public void setPassword(String pwd) {
 		SharedPreferences preferences = PreferenceManager
 				.getDefaultSharedPreferences(appContext);
@@ -197,18 +164,6 @@ public class ValueShopApplication extends Application{
 			password = pwd;
 		}
 	}
-	/**
-	 * ��ȡ����·��
-	 * 
-	 * @return String
-	 */
-	
-	/**
-	 * SD��·��
-	 * 
-	 * @return String
-	 */
-
 
 
 

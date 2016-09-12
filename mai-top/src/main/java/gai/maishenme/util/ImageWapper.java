@@ -5,10 +5,6 @@ import com.squareup.picasso.RequestCreator;
 
 import android.content.Context;
 import android.widget.ImageView;
-
-/**
- * Created by master on 2016/5/10.
- */
 public class ImageWapper {
 
 	/*

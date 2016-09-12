@@ -1,8 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015年5月11日
- *
- *******************************************************************************/
 package gai.maishenme.net;
 
 import android.content.Context;

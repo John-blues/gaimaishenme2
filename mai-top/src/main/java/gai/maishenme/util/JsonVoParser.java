@@ -10,13 +10,6 @@ import gai.maishenme.entity.ShopBriefDataVo;
 
 
 
-
-/**
- * <pre>
- * ҵ����:
- * ����˵��: vo����ͳһ������
- 
- */
 public class JsonVoParser {
 	private static JsonVoParser _jsonVoParser;
 
@@ -32,8 +25,6 @@ public class JsonVoParser {
 		return jsonBinder.fromJson(jsonvo, BaseVo.class);
 	}
 
-
-	//lf�������
 	public ShopBriefDataVo getLfTestBuyVo(String json){
 		return jsonBinder.fromJson(json, ShopBriefDataVo.class);
 		
