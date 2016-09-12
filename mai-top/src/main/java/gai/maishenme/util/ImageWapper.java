@@ -7,12 +7,6 @@ import android.content.Context;
 import android.widget.ImageView;
 public class ImageWapper {
 
-	/*
-	 * public static class Config{ int width; int height; int error; int
-	 * loading; private boolean cacheInMemory = true; private boolean
-	 * cacheOnDisk = true; }
-	 */
-
 	Picasso picasso;
 	private  ImageWapper(Context context) {
 		picasso = Picasso.with(context);

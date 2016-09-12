@@ -1,8 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015年5月8日 
- * 
- *******************************************************************************/
 package gai.maishenme.controller;
 
 import android.app.Dialog;
@@ -23,10 +18,6 @@ import gai.maishenme.net.Operation;
 import gai.maishenme.util.CommonUtils;
 
 import java.util.HashMap;
-
-/**
- 
- */
 public class PostAsynTask extends AsyncTask<Command, Integer, Message> {
 	private Dialog dialog;
 	private Command cmd;

@@ -6,7 +6,6 @@ import gai.maishenme.dialog.ValueShopDialog.ShopDialogListener;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-
 @SuppressLint("ResourceAsColor")
 public class ShowErrorDialogUtil {
 

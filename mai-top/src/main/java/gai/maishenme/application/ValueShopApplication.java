@@ -154,8 +154,6 @@ public class ValueShopApplication extends Application{
 			}
 		}
 	}
-
-
 	public void setPassword(String pwd) {
 		SharedPreferences preferences = PreferenceManager
 				.getDefaultSharedPreferences(appContext);
@@ -164,7 +162,4 @@ public class ValueShopApplication extends Application{
 			password = pwd;
 		}
 	}
-
-
-
 }

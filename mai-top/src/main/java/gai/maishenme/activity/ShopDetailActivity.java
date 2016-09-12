@@ -5,8 +5,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import gai.maishenme.R;
-
-
 public class ShopDetailActivity extends gai.maishenme.base.BaseFragmentActivity {
 	WebView webView;
 	String url;

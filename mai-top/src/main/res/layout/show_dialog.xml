@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:text="活动是否延迟30分钟?"
         android:textSize="20sp" />
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

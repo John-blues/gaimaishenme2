@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
-
-
 public class JsonBinder {
 
 

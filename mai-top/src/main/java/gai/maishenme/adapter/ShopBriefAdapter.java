@@ -17,8 +17,6 @@ import gai.maishenme.activity.ShopDetailActivity;
 import gai.maishenme.entity.ShopBriefDataVo.Data;
 
 import java.util.List;
-
-
 public class ShopBriefAdapter extends BaseAdapter {
 
     private Context context;

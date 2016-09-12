@@ -2,9 +2,6 @@ package gai.maishenme.config;
 
 public class Constants {
 	public static final String INIT_USER_INFO = "userInfo";
-
-	public static final String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDe85G79FkpCymgQ3jPZ5qftwFsuNpMGka8+3/JpVfe728tqAO+DQHrDroaNqu6tW6XdfhBvUir7DgLq0ZE1Zlz/HwLphLhy9a0ZEoeq3SzSw9PFQAYVc9ayIclTgcfaF6T6ENGm1NodnE9YQ24N8KoaheYdc9e1woyHnecBZodBwIDAQAB";
-
 	public static int OPERATOR;
 	//屏幕宽高
 	public static int SCREEN_WIDTH = 0;

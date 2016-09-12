@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 public class CustomTitleBar extends RelativeLayout{
 	private ImageView leftBar;
 	private TextView middleBar,rightBar;

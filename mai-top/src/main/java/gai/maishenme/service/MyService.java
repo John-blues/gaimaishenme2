@@ -16,7 +16,6 @@ import android.os.IBinder;
 import android.view.WindowManager;
 
 public class MyService extends Service implements Observer {
-
     private Dialog mDialog;
     private ScheduledExecutorService mScheduledExecutorService;
 

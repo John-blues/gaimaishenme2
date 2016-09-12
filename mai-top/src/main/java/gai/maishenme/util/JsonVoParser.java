@@ -1,14 +1,7 @@
-/*******************************************************************************
- * Copyright (c) 2015 by dennis Corporation all right reserved.
- * 2015��5��11�� 
- * 
- *******************************************************************************/ 
 package gai.maishenme.util;
 
 import gai.maishenme.entity.BaseVo;
 import gai.maishenme.entity.ShopBriefDataVo;
-
-
 
 public class JsonVoParser {
 	private static JsonVoParser _jsonVoParser;

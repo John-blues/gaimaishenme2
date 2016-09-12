@@ -17,8 +17,6 @@ public class CommonUtils {
 
 		return false;
 	}
-
-
 	public static boolean isExitsSdcard() {
 		if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED))
 			return true;

@@ -5,8 +5,6 @@ import java.io.IOException;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-
-
 public class SerialUtils {
 	static long startTime = 0l;
 	static long endTime = 0l;

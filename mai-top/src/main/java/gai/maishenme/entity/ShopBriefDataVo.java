@@ -2,7 +2,6 @@ package gai.maishenme.entity;
 
 import java.io.Serializable;
 import java.util.List;
-
 public class ShopBriefDataVo implements Serializable{
 	/**
 	 * "id": "3066157",

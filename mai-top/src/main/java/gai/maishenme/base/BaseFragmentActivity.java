@@ -29,7 +29,6 @@ public class BaseFragmentActivity extends FragmentActivity implements
 
 	protected ValueShopApplication mApplication;
 	protected CustomTitleBar customTitleBar;
-
 	protected SharedPreferences userInfo;
 	private SerialUtils serialutols;
 	public static boolean insideTopUpWebView = false;

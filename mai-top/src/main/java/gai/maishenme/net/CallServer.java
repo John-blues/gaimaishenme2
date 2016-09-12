@@ -249,7 +249,6 @@ public class CallServer {
 		post.setHeader("mobilemod", android.os.Build.MODEL);
 		post.setHeader("clientdate", clientDate);
 	}
-
 	/**
 	 * 获取唯一标识码
 	 * 

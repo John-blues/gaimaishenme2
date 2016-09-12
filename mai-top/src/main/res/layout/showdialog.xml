@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:padding="10dp" 
     >
-
     <TextView
         android:id="@+id/dialogTitleTxt"
         android:layout_width="fill_parent"

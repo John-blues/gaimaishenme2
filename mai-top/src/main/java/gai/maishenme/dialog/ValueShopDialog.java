@@ -102,7 +102,6 @@ public class ValueShopDialog extends Dialog {
 		this.listener = listener;
 		this.setCancelable(false); 
 	}
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

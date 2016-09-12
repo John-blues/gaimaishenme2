@@ -8,10 +8,8 @@ import gai.maishenme.entity.BaseVo;
 import gai.maishenme.entity.ShopBriefDataVo;
 import gai.maishenme.util.JsonVoParser;
 import android.os.Message;
-
 public class Operation {
 	private static final String SUCCESS = "1";
-
 	@SuppressWarnings("unchecked")
 	public Message executeLfTest(Command cmd) {
 		HashMap<String, String> hashMap = (HashMap<String, String>) cmd.param;

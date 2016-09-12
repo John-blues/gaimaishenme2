@@ -4,12 +4,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonSetter;
 
 import java.io.Serializable;
- 
-/**
- * <pre>
- *
- */
-public class BaseVo implements Serializable{ 
+public class BaseVo implements Serializable{
 	private static final long serialVersionUID = -1629011640663014271L;
 	// 响应时间
 //	private String time;

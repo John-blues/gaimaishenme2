@@ -113,7 +113,6 @@ public class BaseHandler extends Handler{
                            }
  					}
  				}
-                 
 				isIntercepted = true;
 				ValueShopApplication.timeOutOrLoginCrowdOut = false;
 				return;

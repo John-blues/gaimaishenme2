@@ -121,7 +121,6 @@ public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 						records.clear();
 						page = 1;
 						requestLfData();
-
 					}
 					@Override
 					public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {

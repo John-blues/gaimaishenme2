@@ -66,7 +66,6 @@ public class ActivityTaskManager {
     	  activitymap.clear();
     	  activitymap.put(name, activitySpecified);
       }
-
       public  void removeActivity(String removeName) {
 		// TODO Auto-generated method stub
         Activity activityRemove=activitymap.get(removeName);
