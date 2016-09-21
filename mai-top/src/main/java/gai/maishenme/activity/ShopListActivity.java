@@ -1,5 +1,4 @@
 package gai.maishenme.activity;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Message;
@@ -23,8 +22,6 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-
 public class ShopListActivity extends gai.maishenme.base.BaseFragmentActivity {
 	private PullToRefreshListView shopListView;
 	private List<Data> records;
